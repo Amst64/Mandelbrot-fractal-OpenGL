@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.8)
 
-project(SimpleGlimac)
+project(Mandelbrot)
 
 # Set the folder where the executables are created
 set(EXECUTABLE_OUTPUT_PATH ${CMAKE_SOURCE_DIR}/bin/${CMAKE_BUILD_TYPE})
