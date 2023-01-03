@@ -17,8 +17,10 @@ void main()
     int N      = 1000;
     bool outsideOfCircle = false;
     vec2 Z = vFragPos;
-
+    int iteration = 0;
+    vec3 color;
     for (int i = 0; i < N; i++) {
+        iteration = i;
         if (length(Z) > 2) {
             outsideOfCircle = true;
             break;
@@ -27,7 +29,7 @@ void main()
     }
 
     if (outsideOfCircle) {
-        fFragColor = vec3(1.0, 1.0, 1.0);
+        fFragColor = vec3(float(iteration)  / N, float(iteration) / N, float(iteration) * float(iteration) / N);
     }
     else {
         fFragColor = vec3(0.0, 0.0, 0.0);
