@@ -26,3 +26,6 @@ Then create a *build* folder at the root of this project, open a terminal and ru
 A *bin* folder will be created at the root of this project.
 
 Open a terminal, place yourself in the *bin* folder and run this command `./Mandelbrot.exe`.
+
+## You should see something like this
+![Mandelbrot](https://user-images.githubusercontent.com/91250466/210426557-6115be54-0ab7-4576-8433-4dd991646dfb.png)
