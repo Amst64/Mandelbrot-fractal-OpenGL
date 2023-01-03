@@ -10,11 +10,11 @@ Then create a *build* folder at the root of this project, open a terminal and ru
 
 Open the *build* folder and open the visual studio solution *Mandelbrot.sln*.
 
-Build the project.
+Build the project named Mandelbrot.
 
 A *bin* folder will be created at the root of this project. Open the folder, there will be another folder *Debug*.
 
-Open a terminal, place yourself in the *Debug* folder and run this command `./Mandelbrot_exe.exe mandelbrot.vs.glsl mandelbrot.fs.glsl`.
+Open a terminal, place yourself in the *Debug* folder and run this command `./Mandelbrot.exe`.
 
 
 ## Compile and run on Linux
@@ -25,4 +25,4 @@ Then create a *build* folder at the root of this project, open a terminal and ru
 
 A *bin* folder will be created at the root of this project.
 
-Open a terminal, place yourself in the *bin* folder and run this command `./Mandelbrot_exe.exe mandelbrot.vs.glsl mandelbrot.fs.glsl`.
+Open a terminal, place yourself in the *bin* folder and run this command `./Mandelbrot.exe`.
