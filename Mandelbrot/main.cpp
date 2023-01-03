@@ -97,7 +97,7 @@ int main(int argc, char* argv[])
     glfwSetWindowSizeCallback(window, &size_callback);
 
     glimac::FilePath applicationPath(argv[0]);
-    glimac::Program program = loadProgram(applicationPath.dirPath() + "Mandelbrot/shaders/" + argv[1], applicationPath.dirPath() + "Mandelbrot/shaders/" + argv[2]);
+    glimac::Program program = loadProgram(applicationPath.dirPath() + "Mandelbrot/shaders/mandelbrot.vs.glsl", applicationPath.dirPath() + "Mandelbrot/shaders/mandelbrot.fs.glsl");
     program.use();
 
     //quad
