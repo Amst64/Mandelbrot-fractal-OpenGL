@@ -26,6 +26,7 @@ Program buildProgram(const GLchar* vsSrc, const GLchar* fsSrc) {
 	vs.setSource(vsSrc);
 
 	if(!vs.compile()) {
+		std::cout << "Compilation error for vertex shader: " << vs.getInfoLog() << std::endl;
 		throw std::runtime_error("Compilation error for vertex shader: " + vs.getInfoLog());
 	}
 
@@ -33,6 +34,7 @@ Program buildProgram(const GLchar* vsSrc, const GLchar* fsSrc) {
 	fs.setSource(fsSrc);
 
 	if(!fs.compile()) {
+		std::cout << "Compilation error for fragment shader: " << fs.getInfoLog() << std::endl;
 		throw std::runtime_error("Compilation error for fragment shader: " + fs.getInfoLog());
 	}
 
